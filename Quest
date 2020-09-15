@@ -1,0 +1,33 @@
+maelunix@DESKTOP-L5OHQ54:~$ cd planets
+maelunix@DESKTOP-L5OHQ54:~/planets$ ls
+arrakis.jpeg    cybertron.jpeg  jupiter.jpeg  mercury.jpeg  pluto.jpeg   uranus.jpeg
+coruscant.jpeg  earth.jpeg      mars.jpeg     neptune.jpeg  saturn.jpeg  venus.jpeg
+maelunix@DESKTOP-L5OHQ54:~/planets$ mkdir real
+maelunix@DESKTOP-L5OHQ54:~/planets$ mkdir fictional
+maelunix@DESKTOP-L5OHQ54:~/planets$ mkdir inhabited
+maelunix@DESKTOP-L5OHQ54:~/planets$ cd real
+maelunix@DESKTOP-L5OHQ54:~/planets/real$ mkdir terrestrial
+maelunix@DESKTOP-L5OHQ54:~/planets/real$ mkdir gas-giants
+maelunix@DESKTOP-L5OHQ54:~/planets/real$ mkdir dwarf-planets
+maelunix@DESKTOP-L5OHQ54:~/planets/real$ cd ..
+maelunix@DESKTOP-L5OHQ54:~/planets$ mv arrakis.jpeg cybertron.jpeg coruscant.jpeg fictional
+maelunix@DESKTOP-L5OHQ54:~/planets$ ls
+earth.jpeg  inhabited     mars.jpeg     neptune.jpeg  real         uranus.jpeg
+fictional   jupiter.jpeg  mercury.jpeg  pluto.jpeg    saturn.jpeg  venus.jpeg
+maelunix@DESKTOP-L5OHQ54:~/planets$ cp mars.jpeg neptune.jpeg uranus.jpeg jupiter.jpeg mercury.jpeg saturn.jpeg venus.jpeg inhabited
+maelunix@DESKTOP-L5OHQ54:~/planets$ cd inhabited
+maelunix@DESKTOP-L5OHQ54:~/planets/inhabited$ ls
+jupiter.jpeg  mars.jpeg  mercury.jpeg  neptune.jpeg  saturn.jpeg  uranus.jpeg  venus.jpeg
+maelunix@DESKTOP-L5OHQ54:~/planets/inhabited$ cd ..
+maelunix@DESKTOP-L5OHQ54:~/planets$ mv earth.jpeg mars.jpeg venus.jpeg mercury.jpeg real/terrestrial
+maelunix@DESKTOP-L5OHQ54:~/planets$ mv neptune.jpeg uranus.jpeg jupiter.jpeg saturn.jpeg real/gas-giants
+maelunix@DESKTOP-L5OHQ54:~/planets$ mv pluto.jpeg real/dwarf-planets
+maelunix@DESKTOP-L5OHQ54:~/planets$ cd real
+maelunix@DESKTOP-L5OHQ54:~/planets/real$ rmdir dwarf-planets
+rmdir: failed to remove 'dwarf-planets': Directory not empty
+maelunix@DESKTOP-L5OHQ54:~/planets/real$ cd dwarf-planets
+maelunix@DESKTOP-L5OHQ54:~/planets/real/dwarf-planets$ rm pluto.jpeg
+maelunix@DESKTOP-L5OHQ54:~/planets/real/dwarf-planets$ cd ..
+maelunix@DESKTOP-L5OHQ54:~/planets/real$ rmdir dwarf-planets
+maelunix@DESKTOP-L5OHQ54:~/planets/real$ cd ..
+maelunix@DESKTOP-L5OHQ54:~/planets$ cd ..
